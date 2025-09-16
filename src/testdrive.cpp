@@ -26,12 +26,12 @@ public:
         // Subscribe to cmd_vel
         subscription_ = this->create_subscription<geometry_msgs::msg::Twist>(
             "cmd_vel", 10,
-            std::bind(&Create2Driver::cmdVelCallback, this, std::placeholders::_1));
+            std::bind(&testdrive::cmdVelCallback, this, std::placeholders::_1));
 
         RCLCPP_INFO(this->get_logger(), "Create 2 driver initialized");
     }
 
-    ~Create2Driver()
+    ~testdrive()
     {
         if (serial_fd_ >= 0) {
             close(serial_fd_);
@@ -109,7 +109,7 @@ private:
 int main(int argc, char *argv[])
 {
     rclcpp::init(argc, argv);
-    rclcpp::spin(std::make_shared<Create2Driver>());
+    rclcpp::spin(std::make_shared<testdrive>());
     rclcpp::shutdown();
     return 0;
 }
