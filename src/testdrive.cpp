@@ -6,10 +6,10 @@
 #include <cstring>
 #include <iostream>
 
-class Create2Driver : public rclcpp::Node
+class testdrive : public rclcpp::Node
 {
 public:
-    Create2Driver() : Node("create2_driver")
+    testdrive() : Node("testdrive")
     {
         // Open serial port
         serial_fd_ = open("/dev/ttyUSB0", O_RDWR | O_NOCTTY | O_SYNC);
