@@ -1,5 +1,5 @@
-# SantaBot
-SantaBot is an automated guided vehicle (AGV) that delivers presents during the holiday season! WIP
+# SantaBot (WIP)
+SantaBot is an automated guided vehicle (AGV) that delivers presents during the holiday season! 
 
 # Installation
 To install the santabot package, simply clone it to your ROS 2 workspace (such as "/home/$USER/ros2_ws/src"). Then run "colcon build --packages-select santabot" from within the root of your workspace. Now open a new terminal, source your ROS 2 installation (such as "source /opt/ros/jazzy/setup.bash") and run "source install/local_setup.bash" from inside the ros2_ws directory. Now you should be able to run executables from within the santabot package.
