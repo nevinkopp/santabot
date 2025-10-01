@@ -14,6 +14,6 @@ To install the santabot package, simply clone it to your ROS 2 workspace (such a
 I've included a test drive node you can use to see if everything is communicating properly. Run with "ros2 run santabot testdrive" and then publish a twist message such as "ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.2}, angular: {z: 0.0}}"". 
 If everything is configured properly, the robot should move forward at 20 cm/s. 
 
-#TODO
+# TODO
 Build driver on open serial interface (done)
 Create camera node (in progress)
