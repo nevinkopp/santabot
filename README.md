@@ -15,5 +15,5 @@ I've included a test drive node you can use to see if everything is communicatin
 If everything is configured properly, the robot should move forward at 20 cm/s. 
 
 # TODO
-Build driver on open serial interface (done)
-Create camera node (in progress)
+* Build driver on open serial interface (done)
+* Create camera node (in progress)
